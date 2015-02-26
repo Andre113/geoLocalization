@@ -19,6 +19,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.view.backgroundColor = [UIColor colorWithRed:1.0 green:0.972 blue:0.862 alpha:1];
+    
     //Alocar memória para o location manager
     locationManager = [[CLLocationManager alloc]init];
     

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>33070413-7481-4AD1-A06C-DECF90CCC3B2</string>
+	<key>IDESourceControlProjectName</key>
+	<string>GeoLocation</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>504627DB5F00206BC930024CD0BC953F57A5E39F</key>
+		<string>https://github.com/Andre113/geoLocalization.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>GeoLocation.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>504627DB5F00206BC930024CD0BC953F57A5E39F</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/Andre113/geoLocalization.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>504627DB5F00206BC930024CD0BC953F57A5E39F</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>504627DB5F00206BC930024CD0BC953F57A5E39F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>geoLocalization</string>
+		</dict>
+	</array>
+</dict>
+</plist>

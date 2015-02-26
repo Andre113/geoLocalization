@@ -18,6 +18,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="MAPA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ef2-om-0er">
+                                <rect key="frame" x="150" y="28" width="300" height="21"/>
+                                <color key="backgroundColor" red="0.6716988126158645" green="1" blue="0.71678910715702482" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="25"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ci-pr-I5w">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Atualizar">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="atualizar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nqY-HR-tlI"/>
+                                </connections>
+                            </button>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="satellite" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SLI-FB-e9Y">
                                 <rect key="frame" x="50" y="208" width="500" height="350"/>
                                 <constraints>
@@ -35,7 +51,8 @@
                                         <exclude reference="anL-yJ-wGS"/>
                                     </mask>
                                 </variation>
-                                <variation key="heightClass=regular-widthClass=compact">
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="25" y="268" width="350" height="350"/>
                                     <mask key="constraints">
                                         <exclude reference="Qbl-eZ-geb"/>
                                         <include reference="Uuq-bD-qft"/>
@@ -43,26 +60,14 @@
                                     </mask>
                                 </variation>
                             </mapView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="MAPA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ef2-om-0er">
-                                <rect key="frame" x="150" y="28" width="300" height="21"/>
-                                <fontDescription key="fontDescription" type="italicSystem" pointSize="25"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ci-pr-I5w">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="Atualizar">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="atualizar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nqY-HR-tlI"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="SLI-FB-e9Y" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="34" id="0tK-iZ-QDG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ef2-om-0er" secondAttribute="trailing" constant="-16" id="1qf-So-0Sh"/>
                             <constraint firstItem="ef2-om-0er" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="134" id="5yt-UU-cpE"/>
+                            <constraint firstItem="SLI-FB-e9Y" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="9" id="6Ja-iF-Vg0"/>
+                            <constraint firstItem="ef2-om-0er" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="BKa-Xw-wCg"/>
                             <constraint firstAttribute="trailingMargin" secondItem="SLI-FB-e9Y" secondAttribute="trailing" constant="-1" id="Gq7-lI-gB4">
                                 <variation key="heightClass=regular-widthClass=compact" constant="1"/>
                             </constraint>
@@ -75,6 +80,7 @@
                                 <variation key="heightClass=regular-widthClass=compact" constant="1"/>
                             </constraint>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="8ci-pr-I5w" secondAttribute="bottom" constant="89" id="jya-5l-PfN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="SLI-FB-e9Y" secondAttribute="trailing" constant="9" id="lry-q0-uwz"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="SLI-FB-e9Y" secondAttribute="bottom" constant="184" id="mTx-4u-q7t"/>
                             <constraint firstAttribute="trailingMargin" secondItem="8ci-pr-I5w" secondAttribute="trailing" constant="147" id="nZ1-hq-Eqa"/>
                             <constraint firstItem="8ci-pr-I5w" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="132" id="qUP-HF-Opa"/>
@@ -84,11 +90,15 @@
                                 <exclude reference="8ci-pr-I5w"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="1qf-So-0Sh"/>
+                                <exclude reference="BKa-Xw-wCg"/>
+                                <exclude reference="6Ja-iF-Vg0"/>
+                                <exclude reference="Gq7-lI-gB4"/>
+                                <exclude reference="iu3-jZ-BCo"/>
+                                <exclude reference="lry-q0-uwz"/>
                                 <exclude reference="JJF-dN-Nhj"/>
                                 <exclude reference="nZ1-hq-Eqa"/>
                                 <exclude reference="qUP-HF-Opa"/>
-                                <exclude reference="Gq7-lI-gB4"/>
-                                <exclude reference="iu3-jZ-BCo"/>
                                 <exclude reference="jya-5l-PfN"/>
                                 <exclude reference="mTx-4u-q7t"/>
                             </mask>
@@ -98,13 +108,19 @@
                                 <include reference="8ci-pr-I5w"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="1qf-So-0Sh"/>
+                                <exclude reference="5yt-UU-cpE"/>
+                                <include reference="BKa-Xw-wCg"/>
+                                <exclude reference="NkY-62-9sk"/>
+                                <exclude reference="0tK-iZ-QDG"/>
+                                <include reference="6Ja-iF-Vg0"/>
+                                <exclude reference="Gq7-lI-gB4"/>
+                                <exclude reference="KJu-C5-8tX"/>
+                                <exclude reference="iu3-jZ-BCo"/>
+                                <include reference="lry-q0-uwz"/>
                                 <include reference="JJF-dN-Nhj"/>
                                 <include reference="nZ1-hq-Eqa"/>
                                 <include reference="qUP-HF-Opa"/>
-                                <exclude reference="0tK-iZ-QDG"/>
-                                <include reference="Gq7-lI-gB4"/>
-                                <exclude reference="KJu-C5-8tX"/>
-                                <include reference="iu3-jZ-BCo"/>
                                 <exclude reference="QLF-0A-yUy"/>
                                 <include reference="jya-5l-PfN"/>
                                 <exclude reference="mTx-4u-q7t"/>
