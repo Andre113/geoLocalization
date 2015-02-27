@@ -27,6 +27,7 @@
 @property (weak, nonatomic) IBOutlet UISwitch *painel;
 
 - (IBAction)autoUpdate:(id)sender;
+- (IBAction)point:(id)sender;
 
 
 @end
