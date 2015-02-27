@@ -14,7 +14,7 @@
 
 @implementation ViewController
 
-@synthesize locationManager;
+@synthesize locationManager, painel, onOff;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -34,6 +34,7 @@
     
     //Dizer ao locationManager para começar a procurar pela localização imediatamente
     [locationManager startUpdatingLocation];
+    [self.painel isOn];
     
     [_map setShowsUserLocation:YES];
     
@@ -51,16 +52,21 @@
     
     //Mudar a região atual para a vizualização de forma animada
     [_map setRegion:region animated:YES];
-    
-    [locationManager stopUpdatingLocation];
 }
 
 -(void) locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error{
     //Tratar erro
 }
 
-- (IBAction)atualizar:(id)sender{
-    [locationManager startUpdatingLocation];
+- (IBAction)autoUpdate:(id)sender{
+    if([self.painel isOn]){
+        [locationManager startUpdatingLocation];
+        [onOff setText:@"Auto Update - ON"];
+    }
+    else{
+        [locationManager stopUpdatingLocation];
+        [onOff setText:@"Auto Update - OFF"];
+    }
 }
 
 - (void)didReceiveMemoryWarning {

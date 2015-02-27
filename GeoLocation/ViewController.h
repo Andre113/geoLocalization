@@ -23,8 +23,11 @@
 
 @property (strong, nonatomic) IBOutlet MKMapView *map;
 @property (strong, nonatomic) CLLocationManager *locationManager;
+@property (weak, nonatomic) IBOutlet UILabel *onOff;
+@property (weak, nonatomic) IBOutlet UISwitch *painel;
 
-- (IBAction)atualizar:(id)sender;
+- (IBAction)autoUpdate:(id)sender;
+
 
 @end
 
